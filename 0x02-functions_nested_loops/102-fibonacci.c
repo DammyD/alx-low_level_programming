@@ -7,24 +7,32 @@
  */
 int main(void)
 {
-int count;
-unsigned long fib1 = 1, fib2 = 2, sum;
+int i, l;
+long n1, n2, next;
 
-for (count = 0; count < 50; count++)
+n1 = 1;
+n2 = 2;
+l = 50;
+
+for (i = 0; i < l; i++)
 {
-sum = fib1 + fib2;
-printf("%lu", sum);
-
-fib1 = fib2;
-fib2 = sum;
-
-if (count == 49)
-printf("\n");
+if (i == 49)
+{
+printf("%lu", n1);
+}
 else
-printf(",");
+{
+printf("%lu, ", n1);
+next = n1 + n2;
+n1 = n2;
+n2 = next;
+}
+}
+printf("\n");
+return (0);
+
 }
 
-return (0);
-}
+
 
 
