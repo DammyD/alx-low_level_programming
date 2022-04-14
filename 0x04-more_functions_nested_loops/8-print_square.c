@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_square - prints a square, followed by a new line.
+ * print_square - prints a square
  * @size: print size
  * Return: Always 0
  */
@@ -20,11 +20,14 @@ for (k = 0; k < size; k++)
 _putchar (35);
 }
 _putchar ('\n');
+
 }
+
 }
 
 else
 {
 _putchar ('\n');
 }
+
 }	
