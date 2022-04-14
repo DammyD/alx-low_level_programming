@@ -7,7 +7,7 @@
 void more_numbers(void)
 {
 int i;
-int first_number:
+int first_number;
 int second_number;
 int result;
 
@@ -20,6 +20,7 @@ while (result <= 14)
 if (result < 10)
 {
 second_number = result;
+
 }
 else
 {
