@@ -22,8 +22,8 @@ while (src[j] != '\0')
 {
 
 dest[i] = src[j];
-i++;
 j++;
+i++;
 
 }
 dest[i] = '\0';
