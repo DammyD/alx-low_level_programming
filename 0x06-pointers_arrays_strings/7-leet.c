@@ -7,19 +7,19 @@
 char *leet(char *s)
 {
 
-int a;
-int b;
-char l[] = "ol_ea__t";
+int a = 0, b = 0;
+char array_leet[] = {'4', '3', '0', '7', '1'};
+char array_up[] = {'A', 'E', 'O', 'T', 'L'};
+char array_low[] = {'a', 'e', 'o', 't', 'l'};
 
-for (a = 0; s[a] != '\0'; a++)
+while (s[a] != '\0')
 {
-for (b = 0; l[b] != '\0'; b++)
+for (b = 0; b < 5; b++)
 {
-if (s[a] == l[b] || s[a] == (l[b] - 32))
-{
-s[a] = b + '0';
+if (s[a] == array_low[b] || s[a] == array_up[b])
+s[a] = array_leet[b];
 }
-}
+a++;
 }
 return (s);
 }
