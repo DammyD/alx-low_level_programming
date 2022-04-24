@@ -1,47 +1,42 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_buffer - prints a buffer
- * @b: buffer
- * @size: size
+ * print_buffer - prints a buffer 10 bytes per line
+ * @b: buffer address
+ * @size: number of characters to be printed
  * Return: Always 0
  */
 void print_buffer(char *b, int size);
 {
 int i, j, k;
-i = 0;
-if (size <= 0)
-{
-printf("\n");
-return;
-}
 
-while (i < size)
+if (size <= 0)
+printf("\n");
+else
 {
-j = size - i < 10 ? size - i : 10;
-printf("%08x: ", i);
-for (k = 0; k < 10; k++)
+for (i = 0; i < size; i += 0)
 {
-if (k < j)
-printf("%02x", *(b + i + k));
+printf("%.8x:", i);
+for (j = i; j < i + 10; j++)
+{
+if (j % 2 == 0)
+printf(" ");
+if (j < size)
+printf("%.2x", *(b + j));
 else
 printf(" ");
-if (k % 2)
-{
+}
 printf(" ");
-}
-}
-for (k = 0; k < j; k++)
+for (k = i; k < i + 10; k++)
 {
-int c = *(b + i + k);
-
-if (c < 32 || c > 132)
-{
-c = '.';
-}
-printf("%c", c);
+if (k >= size)
+break;
+if (*(b + k) < 32 || *(b + k) > 126)
+printf("%c", '.');
+else
+printf("%c", *(b + k));
 }
 printf("\n");
-i += 10;
+}
 }
 }
