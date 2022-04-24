@@ -17,7 +17,7 @@ p = &n;
  * You are not allowed to code anything else but the line of code
  */
 *(p + 5) = 98;
-/*...so that this prints 98\n */
+/* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 
 return (0);
