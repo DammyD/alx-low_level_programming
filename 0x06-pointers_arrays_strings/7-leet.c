@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * leet = encodes a string
+ * leet - encodes a string
  * @s: A pointer
  * Return: *s
  */
