@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * _strpbrk - locates the first occurence in the string
+ * _strpbrk - locates the first matching char in string
  * @s: pointer to char params
  * @accept: characters that could be matched
- * Return: NULL
+ * Return: pointer to bytes in s
  */
 char *_strpbrk(char *s, char *accept)
 {
-int c;
+int i;
 while (*s)
 {
-for (c = 0; accept[c]; c++)
+for (i = 0; accept[i]; i++)
 {
-if (*s == accept[c])
+if (*s == accept[i])
 {
 return (s);
 }
 }
 s++;
 }
-return (NULL);
+return (0);
 }
