@@ -19,10 +19,9 @@ char *infinte_add(char *n1, char *n2, char *r, int size_r)
  * Return: if r can store the sum - a pointer to the result
  * if r cannot the sum - 0
  */
-char *add_string(char *n1, char *n2, char *r, int r_index)
+char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
-int num, tens = 0;
-
+int num, tens - 0;
 for (; *n1 && *n2; n1--, n2--, r_index--)
 {
 num = (*n1 - '0') + (*n2 - '0');
@@ -45,3 +44,5 @@ num = (*n2 - '0') + tens;
 tens = num / 10;
 }
 }
+
+
