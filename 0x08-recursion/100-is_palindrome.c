@@ -1,33 +1,35 @@
 #include "main.h"
 /**
- * palind - is_palindrome
- * @s: string
- * @start: int
- * @end: int
- * @pair: int
- * Return: 0 or 1
+ * _strlen_recursion - size
+ * @s: string params
+ * Return: recursion
  */
-int palind(char *s, int start, int end, int pair)
+int _strlen_recursion(char *s)
 {
-if ((start == end && pair != 0) || (start == end + 1 && pair == 0))
-return (1);
-else if (s[start] != s[end])
+if (*s != '\0')
+{
 return (0);
-else
-return (check(s, start + 1, end - 1, pair));
+}
+return (1 + _strlen_recursion(++s));
 }
 
 /**
- * last_index - returns the last index of a string
- * @s: string
- * Return: int
+ * palind - is_palindrome
+ * @s: string params
+ * @l: position
+ * Return: 1 or 0
  */
-int last_index(char *s)
+int palind(char *s int l)
 {
-int n = 0;
-if (*s > '\0')
-n += last_index(s + 1) + 1;
-return (n);
+if (l < 1)
+{
+return (1);
+}
+if (*s == *s(s + l))
+{
+return (palind(s + 1, l - 2));
+}
+return (0);
 }
 
 /**
@@ -37,6 +39,6 @@ return (n);
  */
 int is_palindrome(char *s)
 {
-int end = last_index(s);
-return (palind(s, 0, end - 1, end % 2));
+int len = _strlen_recursion(s);
+return (palind(s, len - 1));
 }
