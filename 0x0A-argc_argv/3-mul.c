@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,18 +11,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int i, ex;
 
-	j = 0;
+	ex = 0;
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
-		j = 1;
+		ex = 1;
 	}
 	else
 	{
 		i = atoi(argv[1]) * atoi(argv[2]);
 		printf("%i\n", i);
 	}
-	return (1);
+	return (ex);
 }
