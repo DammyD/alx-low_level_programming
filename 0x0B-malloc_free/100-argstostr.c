@@ -17,7 +17,8 @@ int l, lt, i, j, k;
 
 if (ac == 0 || av == NULL)
 return (0);
-l = 0; k = 0;
+l = 0;
+k = 0;
 
 for (i = 0; i < ac; i++)
 {
