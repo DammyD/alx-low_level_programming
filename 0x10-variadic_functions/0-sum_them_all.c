@@ -3,9 +3,8 @@
 
 /**
  * sum_them_all - returns the sum of all its paramters.
- * @n: the number of paramters passed to the function.
- * @...: a variable number of paramters
- * Return: 0
+ * @n: n args
+ * Return: sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -13,7 +12,7 @@ va_list arguments;
 unsigned int i;
 int sum = 0;
 
-if (n)
+if (n == 0)
 return (0);
 va_start(arguments, n);
 
