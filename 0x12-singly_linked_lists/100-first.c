@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * myStartupFun - a function the runs before main
+ * first - a function the runs before main
  */
 void first(void)
 {
