@@ -18,11 +18,6 @@ typedef struct listint_s
     int n;
     struct listint_s *next;
 } listint_t;
-typedef struct listint_safe
-{
-	const linstint_t *prev;
-	struct listint_safe *next;
-}listint_safe
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
