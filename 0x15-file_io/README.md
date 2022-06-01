@@ -15,9 +15,3 @@
 
 ### C PROGRAMMING PROJECT FILE I/O
 In this project, I learned about the three standard file descriptors and there POSIX names as well as the difference between function and system calls. I practiced using the I/O system calls open, close, read, and write and the flags O_RDONLY, WR_ONLY, and O_RDWR to create, open, close, read, write, set permissions of files in C. 0_RDWR is equal 2.
-
-### File descriptors
-Integer value	Name	<unistd.h> symbolic constant[1]	<stdio.h> file stream[2]
-0	Standard input	STDIN_FILENO	stdin
-1	Standard output	STDOUT_FILENO	stdout
-2	Standard error	STDERR_FILENO	stderr
