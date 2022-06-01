@@ -7,7 +7,7 @@
 #include <stdlib.h>
 /**
  * main - copies the content of a file to another file
- * @agrc: number of agrs passed
+ * @argc: number of agrs passed
  * @argv: args value
  * Return: 0 on success, -1 on failure
  */
