@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * sum - addition operator
+ * add - addition operator
  * @a: first int
  * @b: second int
  * Return: sum of 2 numbers
  */
 
-int sum(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
